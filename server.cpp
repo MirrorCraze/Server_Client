@@ -1,3 +1,6 @@
+//
+// Created by craze on 11/11/2019.
+//
 #include <stdio.h>
 #include <netdb.h>
 #include <sys/socket.h>
@@ -49,7 +52,7 @@ int main()
     while(1)
     {
         struct sockaddr_in client_addr;
-        int size=sizeof(client_addr);
+        socklen_t size=sizeof(client_addr);
         new_fd=accept(server_fd,(struct sockaddr *)&client_addr,&size);
 
         if(new_fd < 0)

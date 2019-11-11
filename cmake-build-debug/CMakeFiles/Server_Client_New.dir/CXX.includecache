@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client_New/client.cpp
+iostream
+-
+winsock2.h
+-
+WS2tcpip.h
+-
+
+D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client_New/server.cpp
+stdio.h
+-
+netdb.h
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+sys/types.h
+-
+string.h
+-
+stdlib.h
+-
+unistd.h
+-
+fcntl.h
+-
+netinet/in.h
+-
+pthread.h
+-
+
