@@ -49,10 +49,10 @@ RM = "D:\Program\CLion\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client_New"
+CMAKE_SOURCE_DIR = "D:\CityU notes and Files\2nd year\CS3201\Assignment\ServerClientFinale"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client_New\cmake-build-debug"
+CMAKE_BINARY_DIR = "D:\CityU notes and Files\2nd year\CS3201\Assignment\ServerClientFinale\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -81,9 +81,9 @@ rebuild_cache\fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client_New\cmake-build-debug\CMakeFiles" "D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client_New\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CityU notes and Files\2nd year\CS3201\Assignment\ServerClientFinale\cmake-build-debug\CMakeFiles" "D:\CityU notes and Files\2nd year\CS3201\Assignment\ServerClientFinale\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client_New\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CityU notes and Files\2nd year\CS3201\Assignment\ServerClientFinale\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -112,17 +112,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Server_Client_New
+# Target rules for targets named Server_Client_Finale
 
 # Build rule for target.
-Server_Client_New: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Server_Client_New
-.PHONY : Server_Client_New
+Server_Client_Finale: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Server_Client_Finale
+.PHONY : Server_Client_Finale
 
 # fast build rule for target.
-Server_Client_New\fast:
-	$(MAKE) -f CMakeFiles\Server_Client_New.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_New.dir\build
-.PHONY : Server_Client_New\fast
+Server_Client_Finale\fast:
+	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\build
+.PHONY : Server_Client_Finale\fast
 
 client.obj: client.cpp.obj
 
@@ -130,7 +130,7 @@ client.obj: client.cpp.obj
 
 # target to build an object file
 client.cpp.obj:
-	$(MAKE) -f CMakeFiles\Server_Client_New.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_New.dir\client.cpp.obj
+	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\client.cpp.obj
 .PHONY : client.cpp.obj
 
 client.i: client.cpp.i
@@ -139,7 +139,7 @@ client.i: client.cpp.i
 
 # target to preprocess a source file
 client.cpp.i:
-	$(MAKE) -f CMakeFiles\Server_Client_New.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_New.dir\client.cpp.i
+	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\client.cpp.i
 .PHONY : client.cpp.i
 
 client.s: client.cpp.s
@@ -148,62 +148,8 @@ client.s: client.cpp.s
 
 # target to generate assembly for a file
 client.cpp.s:
-	$(MAKE) -f CMakeFiles\Server_Client_New.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_New.dir\client.cpp.s
+	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\client.cpp.s
 .PHONY : client.cpp.s
-
-main.obj: main.cpp.obj
-
-.PHONY : main.obj
-
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\Server_Client_New.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_New.dir\main.cpp.obj
-.PHONY : main.cpp.obj
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\Server_Client_New.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_New.dir\main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\Server_Client_New.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_New.dir\main.cpp.s
-.PHONY : main.cpp.s
-
-server.obj: server.cpp.obj
-
-.PHONY : server.obj
-
-# target to build an object file
-server.cpp.obj:
-	$(MAKE) -f CMakeFiles\Server_Client_New.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_New.dir\server.cpp.obj
-.PHONY : server.cpp.obj
-
-server.i: server.cpp.i
-
-.PHONY : server.i
-
-# target to preprocess a source file
-server.cpp.i:
-	$(MAKE) -f CMakeFiles\Server_Client_New.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_New.dir\server.cpp.i
-.PHONY : server.cpp.i
-
-server.s: server.cpp.s
-
-.PHONY : server.s
-
-# target to generate assembly for a file
-server.cpp.s:
-	$(MAKE) -f CMakeFiles\Server_Client_New.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_New.dir\server.cpp.s
-.PHONY : server.cpp.s
 
 # Help Target
 help:
@@ -211,18 +157,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... Server_Client_New
+	@echo ... Server_Client_Finale
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... client.obj
 	@echo ... client.i
 	@echo ... client.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... server.obj
-	@echo ... server.i
-	@echo ... server.s
 .PHONY : help
 
 

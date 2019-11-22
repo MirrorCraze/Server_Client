@@ -45,21 +45,21 @@ RM = "D:\Program\CLion\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client_New"
+CMAKE_SOURCE_DIR = "D:\CityU notes and Files\2nd year\CS3201\Assignment\ServerClientFinale"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client_New\cmake-build-debug"
+CMAKE_BINARY_DIR = "D:\CityU notes and Files\2nd year\CS3201\Assignment\ServerClientFinale\cmake-build-debug"
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles\Server_Client_New.dir\all
+all: CMakeFiles\Server_Client_Finale.dir\all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles\Server_Client_New.dir\clean
+clean: CMakeFiles\Server_Client_Finale.dir\clean
 
 .PHONY : clean
 
@@ -69,31 +69,31 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/Server_Client_New.dir
+# Target rules for target CMakeFiles/Server_Client_Finale.dir
 
 # All Build rule for target.
-CMakeFiles\Server_Client_New.dir\all:
-	$(MAKE) -f CMakeFiles\Server_Client_New.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_New.dir\depend
-	$(MAKE) -f CMakeFiles\Server_Client_New.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_New.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client_New\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4 "Built target Server_Client_New"
-.PHONY : CMakeFiles\Server_Client_New.dir\all
+CMakeFiles\Server_Client_Finale.dir\all:
+	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\depend
+	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CityU notes and Files\2nd year\CS3201\Assignment\ServerClientFinale\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target Server_Client_Finale"
+.PHONY : CMakeFiles\Server_Client_Finale.dir\all
 
 # Build rule for subdir invocation for target.
-CMakeFiles\Server_Client_New.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client_New\cmake-build-debug\CMakeFiles" 4
-	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_New.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client_New\cmake-build-debug\CMakeFiles" 0
-.PHONY : CMakeFiles\Server_Client_New.dir\rule
+CMakeFiles\Server_Client_Finale.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CityU notes and Files\2nd year\CS3201\Assignment\ServerClientFinale\cmake-build-debug\CMakeFiles" 2
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CityU notes and Files\2nd year\CS3201\Assignment\ServerClientFinale\cmake-build-debug\CMakeFiles" 0
+.PHONY : CMakeFiles\Server_Client_Finale.dir\rule
 
 # Convenience name for target.
-Server_Client_New: CMakeFiles\Server_Client_New.dir\rule
+Server_Client_Finale: CMakeFiles\Server_Client_Finale.dir\rule
 
-.PHONY : Server_Client_New
+.PHONY : Server_Client_Finale
 
 # clean rule for target.
-CMakeFiles\Server_Client_New.dir\clean:
-	$(MAKE) -f CMakeFiles\Server_Client_New.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_New.dir\clean
-.PHONY : CMakeFiles\Server_Client_New.dir\clean
+CMakeFiles\Server_Client_Finale.dir\clean:
+	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\clean
+.PHONY : CMakeFiles\Server_Client_Finale.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/CityU notes and Files/2nd year/CS3201/Assignment/ServerClientFinale/client.cpp
+iostream
+-
+fstream
+-
+cstdio
+-
+WS2tcpip.h
+-
+ws2def.h
+-
+windef.h
+-
+string
+-
+cstring
+-
+stdlib.h
+-
+

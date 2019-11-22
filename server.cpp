@@ -1,6 +1,3 @@
-//
-// Created by craze on 11/11/2019.
-//
 #include <stdio.h>
 #include <netdb.h>
 #include <sys/socket.h>
@@ -77,7 +74,7 @@ int main()
 
 void *client_fun(void *arg)
 {
-    int new_fd = *((int *)arg);
+    int  new_fd = *((int *)arg);
     int file2_fp;
     int len;
 

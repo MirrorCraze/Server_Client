@@ -6,35 +6,21 @@
 
 #IncludeRegexTransform: 
 
-D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client_New/client.cpp
+D:/CityU notes and Files/2nd year/CS3201/Assignment/ServerClientFinale/client.cpp
 iostream
 -
-winsock2.h
+fstream
+-
+cstdio
 -
 WS2tcpip.h
 -
-
-D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client_New/server.cpp
-stdio.h
+ws2def.h
 -
-netdb.h
+windef.h
 -
-sys/socket.h
+string
 -
-arpa/inet.h
--
-sys/types.h
--
-string.h
--
-stdlib.h
--
-unistd.h
--
-fcntl.h
--
-netinet/in.h
--
-pthread.h
+cstring
 -
 

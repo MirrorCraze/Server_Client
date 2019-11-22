@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Server_Client_New.dir/client.cpp.obj"
-  "CMakeFiles/Server_Client_New.dir/main.cpp.obj"
-  "CMakeFiles/Server_Client_New.dir/server.cpp.obj"
   "Server_Client_New.exe"
   "Server_Client_New.exe.manifest"
   "Server_Client_New.lib"

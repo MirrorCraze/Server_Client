@@ -1,4 +1,4 @@
-"D:\Program\CLion\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" "D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client_New"
+"D:\Program\CLion\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" "D:\CityU notes and Files\2nd year\CS3201\Assignment\ServerClientFinale"
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client_New/cmake-build-debug
+-- Build files have been written to: D:/CityU notes and Files/2nd year/CS3201/Assignment/ServerClientFinale/cmake-build-debug
