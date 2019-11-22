@@ -31,6 +31,7 @@ sockaddr_in receiveIPAndPortNumber(int familyAddr);
 void sendAndReceiveData(int clientSock);
 void sendRequest(int clientSock, const string &fileName);
 void receiveResponse(int clientSock, const string &fileName);
+
 int main()
 {
     //Step 0 : Initialize uses of WinSock.
@@ -65,21 +66,21 @@ int main()
 
     //Step 5: Close connection when input = "exit"
     closesocket(clientSock); //Close connection.
-    cout << "Connection closed.\n";
+    cout << "Connection closed." << endl;
     return 0;
 }
+
 int initializeSocket(int &familyAddr, int &clientSock) {
     familyAddr= AF_INET; //Address family IPv4
     clientSock= socket(familyAddr, SOCK_STREAM, 0); // Create new socket
     return clientSock;
 }
 sockaddr_in receiveIPAndPortNumber(int familyAddr) {
-    cout << "Input the IP Address:";
+    cout << "Input the IP Address:\n";
     string serverIpAddr;
     cin >> serverIpAddr;
-    int portNumber; //Port number
-    cout << "Port number: ";
-    cin >> portNumber;
+    int portNumber = 12345; //Port number
+    cout << "IP Address: " << serverIpAddr << '\t' << '\t' << "Port Number: " << portNumber << endl;
     struct sockaddr_in cliAddr;
     //initialize transport address
     cliAddr.sin_family = familyAddr;
@@ -93,10 +94,10 @@ sockaddr_in receiveIPAndPortNumber(int familyAddr) {
     catch(int errorCode)
     {
         if(errorCode == 0)
-            printf("\nInvalid address/Address not supported\n");
+            cout << endl << "Invalid address or address not supported" << endl;
         else //familyAddr is wrong.
-            printf("\nWrong address family \n");
-        exit(EXIT_FAILURE);
+            cout << endl << "Wrong address family" << endl;
+        return receiveIPAndPortNumber(familyAddr);
     }
     return cliAddr;
 }
@@ -108,7 +109,7 @@ void initiateRequest(int clientSock, sockaddr_in &cliAddr) {
         try{
             connectStat = connect(clientSock, (sockaddr*) &cliAddr, sizeof(cliAddr));
             connectTries++;
-            printf("\nConnection status: ");
+            cout << "Connection status: ";
             if(connectStat == SOCKET_ERROR) //connect return 0 if success
                 throw WSAGetLastError();
 
@@ -123,10 +124,10 @@ void initiateRequest(int clientSock, sockaddr_in &cliAddr) {
     }
     if(connectTries == MAX_TRIES) // Connection tries limit reached.
     {
-        cout << "\nConnection limit reached. Closing program...";
+        cout << endl << "Connection limit reached. Closing program...";
         exit(EXIT_FAILURE);
     }
-    printf("Success!\n");
+    cout << "success" << endl;
 }
 void sendRequest(int clientSock, const string &fileName) {
     int sentBytes = 0;
@@ -134,10 +135,11 @@ void sendRequest(int clientSock, const string &fileName) {
     char *fileNameBuffer = NULL;
     int fileNameLength = fileName.size();
     fileNameBuffer = new char[fileNameLength+1];
+    *std::find(fileNameBuffer, fileNameBuffer + fileNameLength,'\0') = '\0'; //End string.
     strncpy(fileNameBuffer, fileName.c_str(), fileNameLength);
     cout << "\nSend status: ";
     do {
-        bytesInBuffer = send(clientSock, fileNameBuffer, fileNameLength, 0);
+        bytesInBuffer = send(clientSock, fileNameBuffer, fileNameLength + 1, 0);
         if (bytesInBuffer < 0) {
             cout << "fail";
 //            printf("error: %s (error code: %d)", strerror(errno), errno);
@@ -149,7 +151,7 @@ void sendRequest(int clientSock, const string &fileName) {
     delete fileNameBuffer;
 }
 void receiveResponse(int clientSock, const string &fileName) {// Before Step 4: Initialize file
-    cout << "\nOpen file status: ";
+    cout << endl << "Open file status: ";
     ofstream outFile;
     outFile.open(fileName, ofstream::out);
     outFile.good() ? cout << "success" : cout << "fail";
@@ -159,37 +161,53 @@ void receiveResponse(int clientSock, const string &fileName) {// Before Step 4: 
     int recvBytes = 0;
     recvBuffer = new char[CHUNK_SIZE];
 
-    cout << "\nReceived text: ";
+    cout << endl << "Received text:" << endl;
     recvBytes = recv(clientSock, recvBuffer, CHUNK_SIZE, 0);
     if (recvBytes < 0) {
-        cout << "\nError receiving message!\n";
+        cout << endl << "Error receiving message!" << endl;
     }
     string save_status = "success";
+
     while(recvBytes > 0)
     {
-        int receivedMessageLength = recvBytes;
+//        cout << "\nReceived " << recvBytes << " bytes.\n";
+        int receivedMessageLength;
+        // Handle file not found
+        if (recvBytes < strlen(recvBuffer)) {
+            receivedMessageLength = recvBytes;
+        } else {
+            receivedMessageLength = strlen(recvBuffer);
+        }
         receivedMessage = new char[receivedMessageLength+1];
         strncpy(receivedMessage, recvBuffer, receivedMessageLength);
         *std::find(receivedMessage, receivedMessage + receivedMessageLength,'\0') = '\0'; //End string.
-        cout << receivedMessage << endl;
-        // Save to text file
+        cout << receivedMessage;
 
+        // Save to text file
         for (int i = 0; i < receivedMessageLength; ++i) {
             if (outFile.good()) {
                 outFile << receivedMessage[i];
             } else {
                 save_status = "error";
+                break;
             }
         }
-        if(recvBytes < CHUNK_SIZE)
+        if(recvBytes < CHUNK_SIZE) {
             break;
+        }
         recvBytes = recv(clientSock, recvBuffer, CHUNK_SIZE, 0);
-
+        if (strlen(recvBuffer) <= 0) break;
+        if (recvBytes < 0) {
+            cout << endl << "Error receiving message!" << endl;
+            break;
+        }
     }
-    cout << "Save text status: ";
+
+    cout << endl << "Save text status: ";
     cout << save_status;
-    delete receivedMessage;
+    cout << endl << "Receive File " << fileName <<  " From the Server Successful!";
     delete recvBuffer;
+    delete receivedMessage;
     outFile.close();
     cout << endl;
 }
@@ -200,7 +218,7 @@ void sendAndReceiveData(int clientSock) {
 
     while (1) {
         //Step 3: Send request to file server
-        cout << "Input the file name to be requested from the server:" << endl;
+        cout << endl << "Input the file name to be requested from the server:" << endl;
         // Get as string and convert to C string for buffer
         getline(cin, fileName);
         if (fileName.compare("exit") == 0) break;

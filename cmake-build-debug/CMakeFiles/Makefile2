@@ -36,19 +36,19 @@ NULL=nul
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\Program\CLion\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\Program\CLion\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\CityU notes and Files\2nd year\CS3201\Assignment\ServerClientFinale"
+CMAKE_SOURCE_DIR = D:\GitHub\ServerClientFinale
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\CityU notes and Files\2nd year\CS3201\Assignment\ServerClientFinale\cmake-build-debug"
+CMAKE_BINARY_DIR = D:\GitHub\ServerClientFinale\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -75,14 +75,14 @@ preinstall:
 CMakeFiles\Server_Client_Finale.dir\all:
 	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\depend
 	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\CityU notes and Files\2nd year\CS3201\Assignment\ServerClientFinale\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target Server_Client_Finale"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\GitHub\ServerClientFinale\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Server_Client_Finale"
 .PHONY : CMakeFiles\Server_Client_Finale.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\Server_Client_Finale.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CityU notes and Files\2nd year\CS3201\Assignment\ServerClientFinale\cmake-build-debug\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\GitHub\ServerClientFinale\cmake-build-debug\CMakeFiles 2
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\CityU notes and Files\2nd year\CS3201\Assignment\ServerClientFinale\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\GitHub\ServerClientFinale\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\Server_Client_Finale.dir\rule
 
 # Convenience name for target.
