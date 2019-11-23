@@ -85,6 +85,12 @@
 		<Unit filename="D:/GitHub/ServerClientFinale/client.cpp">
 			<Option target="Server_Client_Finale"/>
 		</Unit>
+		<Unit filename="D:/GitHub/ServerClientFinale/client_methods.cpp">
+			<Option target="Server_Client_Finale"/>
+		</Unit>
+		<Unit filename="D:/GitHub/ServerClientFinale/client_methods.h">
+			<Option target="Server_Client_Finale"/>
+		</Unit>
 		<Unit filename="D:/GitHub/ServerClientFinale/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

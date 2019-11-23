@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Server_Client_Finale.dir/client.cpp.obj"
+  "CMakeFiles/Server_Client_Finale.dir/client_methods.cpp.obj"
   "Server_Client_Finale.exe"
   "Server_Client_Finale.exe.manifest"
   "Server_Client_Finale.lib"

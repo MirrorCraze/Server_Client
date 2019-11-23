@@ -6,12 +6,14 @@
 
 #IncludeRegexTransform: 
 
-D:/GitHub/ServerClientFinale/client.cpp
+D:/GitHub/ServerClientFinale/client_methods.cpp
+client_methods.h
+D:/GitHub/ServerClientFinale/client_methods.h
+
+D:/GitHub/ServerClientFinale/client_methods.h
 iostream
 -
 fstream
--
-cstdio
 -
 WS2tcpip.h
 -

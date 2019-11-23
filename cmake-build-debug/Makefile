@@ -151,6 +151,33 @@ client.cpp.s:
 	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\client.cpp.s
 .PHONY : client.cpp.s
 
+client_methods.obj: client_methods.cpp.obj
+
+.PHONY : client_methods.obj
+
+# target to build an object file
+client_methods.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\client_methods.cpp.obj
+.PHONY : client_methods.cpp.obj
+
+client_methods.i: client_methods.cpp.i
+
+.PHONY : client_methods.i
+
+# target to preprocess a source file
+client_methods.cpp.i:
+	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\client_methods.cpp.i
+.PHONY : client_methods.cpp.i
+
+client_methods.s: client_methods.cpp.s
+
+.PHONY : client_methods.s
+
+# target to generate assembly for a file
+client_methods.cpp.s:
+	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\client_methods.cpp.s
+.PHONY : client_methods.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -163,6 +190,9 @@ help:
 	@echo ... client.obj
 	@echo ... client.i
 	@echo ... client.s
+	@echo ... client_methods.obj
+	@echo ... client_methods.i
+	@echo ... client_methods.s
 .PHONY : help
 
 
