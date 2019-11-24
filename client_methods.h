@@ -25,5 +25,5 @@ extern sockaddr_in receiveIPAndPortNumber(int familyAddr);
 extern void sendAndReceiveData(int clientSock);
 extern void sendRequest(int clientSock, const string &fileName);
 extern void receiveResponse(int clientSock, const string &fileName);
-extern void initializeWinSock();
+extern int initializeWinSock();
 extern void closeConnection(int clientSock);

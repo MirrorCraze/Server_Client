@@ -16,16 +16,27 @@ using std::ofstream;
 
 int main()
 {
+    int status;
+
     // Step 0 : Initialize uses of WinSock.
-    initializeWinSock();
+    try {
+        status = initializeWinSock();
+        if(status < 0) //fail to use WinSock (which most likely to NOT happen)
+            throw status;
+    }
+    catch (int lastError)
+    {
+        cout << "WinSock initialization failed. Error code: " << lastError;
+        exit(-1);
+    }
 
     // Step 1 : Socket initialization
     int familyAddr;
     int clientSock;
-    int status;
+
     try {
         status = initializeSocket(familyAddr, clientSock);
-        if (status < 0) //fail to initialize
+        if (status < 0) //fail to create socket
         {
             throw (WSAGetLastError());
         }
@@ -37,7 +48,7 @@ int main()
     }
 
     // Step 2a :Receive IP and port number
-    sockaddr_in cliAddr = receiveIPAndPortNumber(familyAddr);
+    sockaddr_in cliAddr = receiveIPAndPortNumber(familyAddr); //Second argument is for "how many times have client tries to connect to server.
 
     // Step 2b: Initiate connection request
     initiateRequest(clientSock, cliAddr);

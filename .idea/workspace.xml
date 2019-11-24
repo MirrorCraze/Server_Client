@@ -39,7 +39,10 @@
       <change beforePath="$PROJECT_DIR$/client.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/client.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client_methods.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/client_methods.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client_methods.h" beforeDir="false" afterPath="$PROJECT_DIR$/client_methods.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/client.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/client.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/client_methods.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/client_methods.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/vc140.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Server_Client_Finale.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Server_Client_Finale.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Server_Client_Finale.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Server_Client_Finale.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Server_Client_Finale.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Server_Client_Finale.pdb" afterDir="false" />
@@ -116,7 +119,7 @@
       <workItem from="1574392747325" duration="6538000" />
       <workItem from="1574428382666" duration="2375000" />
       <workItem from="1574521571838" duration="4676000" />
-      <workItem from="1574536713899" duration="3376000" />
+      <workItem from="1574536713899" duration="6317000" />
     </task>
     <servers />
   </component>

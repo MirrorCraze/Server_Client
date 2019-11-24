@@ -3,9 +3,10 @@
 #define CHUNK_SIZE 512
 
 
-void initializeWinSock() {
+int initializeWinSock() {
     WSADATA wsaData;
     int err = WSAStartup(MAKEWORD(2, 2), &wsaData);
+    return err;
 }
 int initializeSocket(int &familyAddr, int &clientSock) {
     familyAddr= AF_INET; //Address family IPv4
@@ -138,6 +139,7 @@ void receiveResponse(int clientSock, const string &fileName) {
                     outFile << receivedMessage[i];
                 } else {
                     save_status = "error";
+                    break;
                 }
             }
             if(recvBytes < CHUNK_SIZE) { //Last batch
@@ -148,7 +150,7 @@ void receiveResponse(int clientSock, const string &fileName) {
             if (recvBytes < 0) {
                 msg_recv_flag = false;
                 throw "Error receiving message!";
-                break;
+
             }
         }
     } catch (const string& err) {
@@ -160,7 +162,10 @@ void receiveResponse(int clientSock, const string &fileName) {
     if (msg_recv_flag) {
         cout << endl << "Receive File " << fileName <<  " From the Server Successful!";
     }
-
+    else
+    {
+        cout << endl << "Receive File " << fileName <<  " From the Server Fail.";
+    }
     delete recvBuffer;
     delete receivedMessage;
     outFile.close();
@@ -170,12 +175,12 @@ void sendAndReceiveData(int clientSock) {
     string fileName;
     cin.ignore(); // Ignore newline from previous input
 
-    while (1) {
+    while (true) {
         //Step 3: Send request to file server
         cout << endl << "Input the file name to be requested from the server:" << endl;
         // Get as string and convert to C string for buffer
         getline(cin, fileName);
-        if (fileName.compare("exit") == 0) break;
+        if (fileName.compare("exit") == 0) return;
         sendRequest(clientSock, fileName);
 
         //Step 4: Receive content and save to a file
