@@ -119,6 +119,7 @@ void receiveResponse(int clientSock, const string &fileName) {
         recvBytes = recv(clientSock, recvBuffer, CHUNK_SIZE, 0);
         if (recvBytes < 0) {
             cout << endl << "Error receiving message!" << endl;
+            msg_recv_flag = false;
         }
 
         while (recvBytes > 0)
@@ -143,10 +144,10 @@ void receiveResponse(int clientSock, const string &fileName) {
                     save_status = "error";
                 }
             }
-            if(recvBytes < CHUNK_SIZE) {
+            if(recvBytes < CHUNK_SIZE) { //Last batch
                 break;
             }
-            recvBytes = recv(clientSock, recvBuffer, CHUNK_SIZE, 0);
+            recvBytes = recv(clientSock, recvBuffer, CHUNK_SIZE, 0); //Receive new batch
             if (strlen(recvBuffer) <= 0) break;
             if (recvBytes < 0) {
                 msg_recv_flag = false;

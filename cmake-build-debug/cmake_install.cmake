@@ -1,4 +1,4 @@
-# Install script for directory: D:/GitHub/ServerClientFinale
+# Install script for directory: D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/GitHub/ServerClientFinale/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
