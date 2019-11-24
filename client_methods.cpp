@@ -1,9 +1,4 @@
-//
-// Created by Michael on 23/11/2019.
-//
-
 #include "client_methods.h"
-
 #define MAX_TRIES 10
 #define CHUNK_SIZE 512
 
@@ -21,8 +16,9 @@ sockaddr_in receiveIPAndPortNumber(int familyAddr) {
     cout << "Input the IP Address: " << endl;
     string serverIpAddr;
     cin >> serverIpAddr;
-    int portNumber = 12345; //Port number
-
+    int portNumber; //Port number
+    cout << "Input the Port Number: " << endl;
+    cin >> portNumber;
     cout << "IP Address: " << serverIpAddr << '\t' << '\t' << "Port Number: " << portNumber;
     struct sockaddr_in cliAddr;
     //initialize transport address
@@ -101,7 +97,7 @@ void receiveResponse(int clientSock, const string &fileName) {
     try {
         cout << endl << "Open file status: ";
         outFile.open(fileName, ofstream::out);
-        outFile.good() ? cout << "success" : throw std::runtime_error("error");
+        outFile.good() ? printf("Success") : throw std::runtime_error("error");
     } catch (std::exception const& e) {
         cout << e.what();
     }

@@ -1,7 +1,3 @@
-//
-// Created by Michael on 23/11/2019.
-//
-
 #include <iostream>
 #include <fstream>
 #include <WS2tcpip.h>
@@ -10,6 +6,7 @@
 #include <string>
 #include <cstring>
 #include <stdlib.h>
+#include <stdio.h>
 
 #ifndef SERVER_CLIENT_NEW_CLIENT_METHODS_H
 #define SERVER_CLIENT_NEW_CLIENT_METHODS_H

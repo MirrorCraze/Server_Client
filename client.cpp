@@ -3,12 +3,8 @@
 // By LIM Michael and DAWIEANG Phudis
 
 #include <iostream>
-#include <fstream>
 #include <WS2tcpip.h>
 #include <ws2def.h>
-#include <windef.h>
-#include <string>
-#include <cstring>
 #include <stdlib.h>
 #include "client_methods.h"
 

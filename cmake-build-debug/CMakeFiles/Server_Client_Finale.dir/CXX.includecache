@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client/client.cpp
+iostream
+-
+WS2tcpip.h
+-
+ws2def.h
+-
+stdlib.h
+-
+client_methods.h
+D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client/client_methods.h
+
+D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client/client_methods.cpp
+client_methods.h
+D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client/client_methods.h
+
+D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client/client_methods.h
+iostream
+-
+fstream
+-
+WS2tcpip.h
+-
+ws2def.h
+-
+windef.h
+-
+string
+-
+cstring
+-
+stdlib.h
+-
+stdio.h
+-
+
