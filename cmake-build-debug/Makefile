@@ -112,17 +112,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Server_Client_Finale
+# Target rules for targets named Server_Client
 
 # Build rule for target.
-Server_Client_Finale: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Server_Client_Finale
-.PHONY : Server_Client_Finale
+Server_Client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Server_Client
+.PHONY : Server_Client
 
 # fast build rule for target.
-Server_Client_Finale\fast:
-	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\build
-.PHONY : Server_Client_Finale\fast
+Server_Client\fast:
+	$(MAKE) -f CMakeFiles\Server_Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client.dir\build
+.PHONY : Server_Client\fast
 
 client.obj: client.cpp.obj
 
@@ -130,7 +130,7 @@ client.obj: client.cpp.obj
 
 # target to build an object file
 client.cpp.obj:
-	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\client.cpp.obj
+	$(MAKE) -f CMakeFiles\Server_Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client.dir\client.cpp.obj
 .PHONY : client.cpp.obj
 
 client.i: client.cpp.i
@@ -139,7 +139,7 @@ client.i: client.cpp.i
 
 # target to preprocess a source file
 client.cpp.i:
-	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\client.cpp.i
+	$(MAKE) -f CMakeFiles\Server_Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client.dir\client.cpp.i
 .PHONY : client.cpp.i
 
 client.s: client.cpp.s
@@ -148,7 +148,7 @@ client.s: client.cpp.s
 
 # target to generate assembly for a file
 client.cpp.s:
-	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\client.cpp.s
+	$(MAKE) -f CMakeFiles\Server_Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client.dir\client.cpp.s
 .PHONY : client.cpp.s
 
 client_methods.obj: client_methods.cpp.obj
@@ -157,7 +157,7 @@ client_methods.obj: client_methods.cpp.obj
 
 # target to build an object file
 client_methods.cpp.obj:
-	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\client_methods.cpp.obj
+	$(MAKE) -f CMakeFiles\Server_Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client.dir\client_methods.cpp.obj
 .PHONY : client_methods.cpp.obj
 
 client_methods.i: client_methods.cpp.i
@@ -166,7 +166,7 @@ client_methods.i: client_methods.cpp.i
 
 # target to preprocess a source file
 client_methods.cpp.i:
-	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\client_methods.cpp.i
+	$(MAKE) -f CMakeFiles\Server_Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client.dir\client_methods.cpp.i
 .PHONY : client_methods.cpp.i
 
 client_methods.s: client_methods.cpp.s
@@ -175,7 +175,7 @@ client_methods.s: client_methods.cpp.s
 
 # target to generate assembly for a file
 client_methods.cpp.s:
-	$(MAKE) -f CMakeFiles\Server_Client_Finale.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client_Finale.dir\client_methods.cpp.s
+	$(MAKE) -f CMakeFiles\Server_Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client.dir\client_methods.cpp.s
 .PHONY : client_methods.cpp.s
 
 # Help Target
@@ -184,8 +184,8 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... Server_Client_Finale
 	@echo ... edit_cache
+	@echo ... Server_Client
 	@echo ... rebuild_cache
 	@echo ... client.obj
 	@echo ... client.i

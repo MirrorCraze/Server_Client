@@ -25,7 +25,7 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Server_Client_New" targetName="Server_Client_Finale" />
+      <config projectName="Server_Client_New" targetName="Server_Client" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -36,16 +36,10 @@
   <component name="ChangeListManager">
     <list default="true" id="811c8adb-ea55-420e-b741-47cb39ea3a1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/client.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_methods.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/client_methods.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_methods.h" beforeDir="false" afterPath="$PROJECT_DIR$/client_methods.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/client.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/client.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/client_methods.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/client_methods.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Server_Client_Finale.dir/vc140.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Server_Client_Finale.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Server_Client_Finale.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Server_Client_Finale.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Server_Client_Finale.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Server_Client_Finale.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Server_Client_Finale.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Server_Client_New.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Server_Client_New.cbp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +87,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Server_Client_Finale" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Server_Client_New" TARGET_NAME="Server_Client_Finale" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Server_Client_New" RUN_TARGET_NAME="Server_Client_Finale">
+    <configuration name="Server_Client" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Server_Client_New" TARGET_NAME="Server_Client" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Server_Client_New" RUN_TARGET_NAME="Server_Client">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -119,7 +113,8 @@
       <workItem from="1574392747325" duration="6538000" />
       <workItem from="1574428382666" duration="2375000" />
       <workItem from="1574521571838" duration="4676000" />
-      <workItem from="1574536713899" duration="6317000" />
+      <workItem from="1574536713899" duration="7110000" />
+      <workItem from="1574924766338" duration="199000" />
     </task>
     <servers />
   </component>

@@ -48,7 +48,7 @@ int main()
     }
 
     // Step 2a :Receive IP and port number
-    sockaddr_in cliAddr = receiveIPAndPortNumber(familyAddr); //Second argument is for "how many times have client tries to connect to server.
+    sockaddr_in cliAddr = receiveIPAndPortNumber(familyAddr);
 
     // Step 2b: Initiate connection request
     initiateRequest(clientSock, cliAddr);
