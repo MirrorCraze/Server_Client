@@ -58,23 +58,23 @@ include CMakeFiles\Server_Client.dir\progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles\Server_Client.dir\flags.make
 
-CMakeFiles\Server_Client.dir\client.cpp.obj: CMakeFiles\Server_Client.dir\flags.make
-CMakeFiles\Server_Client.dir\client.cpp.obj: ..\client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Server_Client.dir/client.cpp.obj"
+CMakeFiles\Server_Client.dir\55334795-55411086.cpp.obj: CMakeFiles\Server_Client.dir\flags.make
+CMakeFiles\Server_Client.dir\55334795-55411086.cpp.obj: ..\55334795-55411086.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Server_Client.dir/55334795-55411086.cpp.obj"
 	"C:\PROGRA~2\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe" @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Server_Client.dir\client.cpp.obj /FdCMakeFiles\Server_Client.dir\ /FS -c "D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client\client.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Server_Client.dir\55334795-55411086.cpp.obj /FdCMakeFiles\Server_Client.dir\ /FS -c "D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client\55334795-55411086.cpp"
 <<
 
-CMakeFiles\Server_Client.dir\client.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server_Client.dir/client.cpp.i"
-	"C:\PROGRA~2\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe" > CMakeFiles\Server_Client.dir\client.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client\client.cpp"
+CMakeFiles\Server_Client.dir\55334795-55411086.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server_Client.dir/55334795-55411086.cpp.i"
+	"C:\PROGRA~2\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe" > CMakeFiles\Server_Client.dir\55334795-55411086.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client\55334795-55411086.cpp"
 <<
 
-CMakeFiles\Server_Client.dir\client.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server_Client.dir/client.cpp.s"
+CMakeFiles\Server_Client.dir\55334795-55411086.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server_Client.dir/55334795-55411086.cpp.s"
 	"C:\PROGRA~2\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe" @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Server_Client.dir\client.cpp.s /c "D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client\client.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Server_Client.dir\55334795-55411086.cpp.s /c "D:\CityU notes and Files\2nd year\CS3201\Assignment\Server_Client\55334795-55411086.cpp"
 <<
 
 CMakeFiles\Server_Client.dir\client_methods.cpp.obj: CMakeFiles\Server_Client.dir\flags.make
@@ -98,13 +98,13 @@ CMakeFiles\Server_Client.dir\client_methods.cpp.s: cmake_force
 
 # Object files for target Server_Client
 Server_Client_OBJECTS = \
-"CMakeFiles\Server_Client.dir\client.cpp.obj" \
+"CMakeFiles\Server_Client.dir\55334795-55411086.cpp.obj" \
 "CMakeFiles\Server_Client.dir\client_methods.cpp.obj"
 
 # External object files for target Server_Client
 Server_Client_EXTERNAL_OBJECTS =
 
-Server_Client.exe: CMakeFiles\Server_Client.dir\client.cpp.obj
+Server_Client.exe: CMakeFiles\Server_Client.dir\55334795-55411086.cpp.obj
 Server_Client.exe: CMakeFiles\Server_Client.dir\client_methods.cpp.obj
 Server_Client.exe: CMakeFiles\Server_Client.dir\build.make
 Server_Client.exe: CMakeFiles\Server_Client.dir\objects1.rsp

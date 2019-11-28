@@ -112,44 +112,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Server_Client
+# Target rules for targets named Client
 
 # Build rule for target.
-Server_Client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Server_Client
-.PHONY : Server_Client
+Client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Client
+.PHONY : Client
 
 # fast build rule for target.
-Server_Client\fast:
-	$(MAKE) -f CMakeFiles\Server_Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client.dir\build
-.PHONY : Server_Client\fast
+Client\fast:
+	$(MAKE) -f CMakeFiles\Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Client.dir\build
+.PHONY : Client\fast
 
-client.obj: client.cpp.obj
+55334795-55411086.obj: 55334795-55411086.cpp.obj
 
-.PHONY : client.obj
+.PHONY : 55334795-55411086.obj
 
 # target to build an object file
-client.cpp.obj:
-	$(MAKE) -f CMakeFiles\Server_Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client.dir\client.cpp.obj
-.PHONY : client.cpp.obj
+55334795-55411086.cpp.obj:
+	$(MAKE) -f CMakeFiles\Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Client.dir\55334795-55411086.cpp.obj
+.PHONY : 55334795-55411086.cpp.obj
 
-client.i: client.cpp.i
+55334795-55411086.i: 55334795-55411086.cpp.i
 
-.PHONY : client.i
+.PHONY : 55334795-55411086.i
 
 # target to preprocess a source file
-client.cpp.i:
-	$(MAKE) -f CMakeFiles\Server_Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client.dir\client.cpp.i
-.PHONY : client.cpp.i
+55334795-55411086.cpp.i:
+	$(MAKE) -f CMakeFiles\Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Client.dir\55334795-55411086.cpp.i
+.PHONY : 55334795-55411086.cpp.i
 
-client.s: client.cpp.s
+55334795-55411086.s: 55334795-55411086.cpp.s
 
-.PHONY : client.s
+.PHONY : 55334795-55411086.s
 
 # target to generate assembly for a file
-client.cpp.s:
-	$(MAKE) -f CMakeFiles\Server_Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client.dir\client.cpp.s
-.PHONY : client.cpp.s
+55334795-55411086.cpp.s:
+	$(MAKE) -f CMakeFiles\Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Client.dir\55334795-55411086.cpp.s
+.PHONY : 55334795-55411086.cpp.s
 
 client_methods.obj: client_methods.cpp.obj
 
@@ -157,7 +157,7 @@ client_methods.obj: client_methods.cpp.obj
 
 # target to build an object file
 client_methods.cpp.obj:
-	$(MAKE) -f CMakeFiles\Server_Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client.dir\client_methods.cpp.obj
+	$(MAKE) -f CMakeFiles\Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Client.dir\client_methods.cpp.obj
 .PHONY : client_methods.cpp.obj
 
 client_methods.i: client_methods.cpp.i
@@ -166,7 +166,7 @@ client_methods.i: client_methods.cpp.i
 
 # target to preprocess a source file
 client_methods.cpp.i:
-	$(MAKE) -f CMakeFiles\Server_Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client.dir\client_methods.cpp.i
+	$(MAKE) -f CMakeFiles\Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Client.dir\client_methods.cpp.i
 .PHONY : client_methods.cpp.i
 
 client_methods.s: client_methods.cpp.s
@@ -175,7 +175,7 @@ client_methods.s: client_methods.cpp.s
 
 # target to generate assembly for a file
 client_methods.cpp.s:
-	$(MAKE) -f CMakeFiles\Server_Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Server_Client.dir\client_methods.cpp.s
+	$(MAKE) -f CMakeFiles\Client.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Client.dir\client_methods.cpp.s
 .PHONY : client_methods.cpp.s
 
 # Help Target
@@ -184,12 +184,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... Client
 	@echo ... edit_cache
-	@echo ... Server_Client
 	@echo ... rebuild_cache
-	@echo ... client.obj
-	@echo ... client.i
-	@echo ... client.s
+	@echo ... 55334795-55411086.obj
+	@echo ... 55334795-55411086.i
+	@echo ... 55334795-55411086.s
 	@echo ... client_methods.obj
 	@echo ... client_methods.i
 	@echo ... client_methods.s

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client/55334795-55411086.cpp" "D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client/cmake-build-debug/CMakeFiles/Server_Client.dir/55334795-55411086.cpp.obj"
-  "D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client/client_methods.cpp" "D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client/cmake-build-debug/CMakeFiles/Server_Client.dir/client_methods.cpp.obj"
+  "D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client/55334795-55411086.cpp" "D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client/cmake-build-debug/CMakeFiles/Client.dir/55334795-55411086.cpp.obj"
+  "D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client/client_methods.cpp" "D:/CityU notes and Files/2nd year/CS3201/Assignment/Server_Client/cmake-build-debug/CMakeFiles/Client.dir/client_methods.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
