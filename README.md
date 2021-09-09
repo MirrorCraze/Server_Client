@@ -1,6 +1,6 @@
 # Server Client App
 
-This program is created by Michael Lim (55334795) and Phudis Dawieang (55411086)
+This program is created by Michael Lim and Phudis Dawieang
 
 The "main" program is in 55334795-55411086.cpp
 All functions used are in client_methods.cpp
