@@ -1,3 +1,5 @@
+# Server Client App
+
 This program is created by Michael Lim (55334795) and Phudis Dawieang (55411086)
 
 The "main" program is in 55334795-55411086.cpp
@@ -15,14 +17,14 @@ C compiler identification: MSVC 19.23.28106.4
 CXX compiler identification: MSVC 19.23.28106.4
 Language: C/C++
 
-*****Build and Run Instructions*****
+## Build and Run Instructions
 1. Unpack zip file into a folder
 2. With cmake installed, run `cmake . && cmake --build .`
 3. The executable can be found inside the Debug folder of the project directory. The executable file is named Client.exe.
 
 
-*****Program Execution Instruction*****
-IP address must be in IPv4
-Connection between client and server will be tried for maximum 10 times. After that, if connection still fails, the program will exit.
-If the file is not found but the connection still success, then file will be created with the name given and with the text "File" inside the file.
-Type "exit" when program asked "Input the file name to be requested from the server:" to close the connection.
+## Program Execution Instruction
+- IP address must be in IPv4
+- Connection between client and server will be tried for maximum 10 times. After that, if connection still fails, the program will exit.
+- If the file is not found but the connection still success, then file will be created with the name given and with the text "File" inside the file.
+- Type "exit" when program asked "Input the file name to be requested from the server:" to close the connection.
